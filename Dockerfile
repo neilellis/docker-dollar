@@ -1,5 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER hello@neilellis.me
+VOLUME /cwd
 RUN mkdir /app
 RUN mkdir /data
 RUN mkdir /examples
@@ -13,6 +14,5 @@ RUN /app/dollar/bin/dollar /examples/init.ds
 WORKDIR /cwd
 ENTRYPOINT ["/app/dollar/bin/dollar"]
 CMD ["/examples/hello.ds"]
-VOLUME /cwd
 
 
