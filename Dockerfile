@@ -1,6 +1,5 @@
-MAINTAINER hello@neilellis.me
-
 FROM ubuntu:14.04
+MAINTAINER hello@neilellis.me
 RUN mkdir /app
 RUN mkdir /data
 RUN mkdir /examples
